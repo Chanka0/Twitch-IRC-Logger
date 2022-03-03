@@ -28,7 +28,7 @@ Formatted regex:
 "filterFlags": "g",
 ```
 
-## Techincal Explanation
+## Technical Explanation
 This script is rather simple. From `config.json` it grabs all listed channels and creates `fs.writeStreams` and IRC connections to each. The files are created in the same directory as `logger.js`.
 
 ### Why writeStream instead of a normal fs.writeFile connection?
