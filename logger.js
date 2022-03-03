@@ -1,20 +1,17 @@
 const tmi = require('tmi.js');
 const fs = require('fs');
 const process = require('process');
-const { username, twitchAuth, logging, channels, filterRegex, prefix, suffix} = require('./config.json');
+const {tIdentity, tOptions, tChannels, filterRegex, prefix, suffix} = require('./config.json');
 const writeStreams = new Map();
 const client = new tmi.Client({
-	options: { debug: logging },
-	identity: {
-		username: username,
-		password: twitchAuth
-	},
-	channels: channels
+	options: tOptions,
+	identity: tIdentity,
+	channels: tChannels
 });
 
-channels.forEach(e => {
+tChannels.forEach(e => {
 	e = e.replace('#','');
-	let stream = fs.createWriteStream('./utils/logger/'+ e +'.txt', {flags:'a'});
+	let stream = fs.createWriteStream('./'+ e +'.txt', {flags:'a'});
 	writeStreams.set(e, stream);
 })
 

@@ -1,9 +1,11 @@
 {
-    "username": "username",
-    "twitchAuth": "oauth",
-    "logging": "true",
-    "channels": ["channel"],
-    "filterRegex": "^[a-zA-Z]{3,7}$",
-    "prefix": "prefix ",
-    "suffix": " suffix"
+    "tIdentity": {},
+    "tOptions": {
+        "debug": "true"
+    },
+    "tChannels": ["channel"],
+    "filterRegex": "",
+    "filterFlags": "",
+    "prefix": "",
+    "suffix": ""
 }
