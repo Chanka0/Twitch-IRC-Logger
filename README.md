@@ -1,5 +1,5 @@
 # About
-This is a simple scalable Twitch IRC logger. It utilizes [tmi.js](https://www.npmjs.com/package/tmi.js) to listen to an IRC channel with full configuration in `config.json`, including regex filtering and 
+This is a simple scalable Twitch IRC logger. It utilizes [tmi.js](https://www.npmjs.com/package/tmi.js) to listen to an IRC channel with full configuration in `config.json`, including regex filtering and file streaming capable of handling multiple 50-100k viewer streams.
 
 # Installation
 `logger.js` requires [Node.js >=10.0.0](https://nodejs.org/en/) and [tmi.js](https://www.npmjs.com/package/tmi.js). After configuration, logger.js can be launched by running `node logger.js`.
